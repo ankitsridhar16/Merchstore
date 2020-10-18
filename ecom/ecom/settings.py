@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken', #for custom signup
     'api',
     'api.category',
-    'api.product'
+    'api.product',
+    'api.user'
 ]
 
 MIDDLEWARE = [
@@ -129,7 +130,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 STATIC_URL = '/static/'
 CORS_ALLOW_ALL_ORIGINS = True
-
+AUTH_USER_MODEL = "user.CustomUser"
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
