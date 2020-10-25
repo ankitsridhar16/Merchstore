@@ -25,8 +25,8 @@ export default function Home() {
         loadAllProducts();
     }, []) // eslint-disable-line react-hooks/exhaustive-deps
     return (
-        <Base title="Home Page" description="Welcome to Our T shirt Shop"> 
-            <h1>Home Component</h1>
+        <Base title="Merch-Store" description="Your favourite merch destination"> 
+            <h1 className="text-center">Collections</h1><br></br>
             <div className="row">
                 {products.map((product,index)=> {
                     return (

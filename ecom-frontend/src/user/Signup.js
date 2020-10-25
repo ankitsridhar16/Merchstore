@@ -89,7 +89,7 @@ const Signup = ()=> {
         )
     }
     return (
-        <Base title="Signup Page" description="Signup for merch store">
+        <Base title="Signup Here" description="You are seconds away from creating an account">
             {successMessage()}
             {errorMessage()}
             {signUpForm()}
